@@ -1,6 +1,6 @@
 <template>
     <div>
-    <span v-once>Enter a number from 1 to 4999 to convert from the Roman number system to Arabic and vice versa. </span>
+    <span class = "display1" v-once>Enter a number from 1 to 4999 to convert from the Roman number system to Arabic and vice versa. </span>
         <ul>
             <li v-for="err in errors" class="red--text">
                 {{err}}
@@ -8,7 +8,6 @@
         </ul>
     <div>
         
-        <span v-once>Sukablyad! </span>
         <v-textarea
           solo
           name="input"
@@ -23,7 +22,6 @@
           label="Input value"
             v-model="output"
         />
-       <v-btn @click="send">Click</v-btn>
     </div>
 
 
@@ -78,5 +76,15 @@ export default {
 </script>
 
 <style>
+body{background: rgba(94, 185, 238, 0.151)}
+
+#display1 {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #0479ee1c;
+  margin-top: 60px;
+}
 
 </style>
