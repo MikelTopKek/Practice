@@ -7,5 +7,4 @@ django-rest-knox==4.0.1
 django-cors-headers
 requests
 django-extensions
-numeral
 roman
